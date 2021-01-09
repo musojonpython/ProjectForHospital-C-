@@ -1,0 +1,27 @@
+//---------------------------------------------------------------------------
+
+#ifndef Unit8_KundalikH
+#define Unit8_KundalikH
+//---------------------------------------------------------------------------
+#include <Classes.hpp>
+#include <Controls.hpp>
+#include <StdCtrls.hpp>
+#include <Forms.hpp>
+#include <Menus.hpp>
+//---------------------------------------------------------------------------
+class TKundalik : public TForm
+{
+__published:	// IDE-managed Components
+	TMainMenu *MainMenu1;
+	TMemo *Memo1;
+	TMenuItem *Saqlash1;
+	TMenuItem *Font1;
+	TMenuItem *Chiqish1;
+private:	// User declarations
+public:		// User declarations
+	__fastcall TKundalik(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TKundalik *Kundalik;
+//---------------------------------------------------------------------------
+#endif

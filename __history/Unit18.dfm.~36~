@@ -1,0 +1,170 @@
+object Form_Shifoxona_boshligi_login_parol: TForm_Shifoxona_boshligi_login_parol
+  Left = 598
+  Top = 236
+  BorderStyle = bsDialog
+  Caption = 'Shifoxona boshlig'#39'i login parol'
+  ClientHeight = 345
+  ClientWidth = 253
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesigned
+  OnActivate = FormActivate
+  OnClose = FormClose
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 253
+    Height = 345
+    Align = alClient
+    BevelInner = bvLowered
+    BevelKind = bkFlat
+    BevelWidth = 5
+    BorderWidth = 5
+    Color = clAqua
+    ParentBackground = False
+    TabOrder = 0
+    object Label1: TLabel
+      Left = 32
+      Top = 135
+      Width = 188
+      Height = 24
+      Caption = 'Parol yoki login xato'
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clRed
+      Font.Height = -21
+      Font.Name = 'Arial'
+      Font.Style = []
+      ParentFont = False
+      Visible = False
+    end
+    object SpeedButton1: TSpeedButton
+      Left = 32
+      Top = 161
+      Width = 139
+      Height = 28
+      Cursor = crHandPoint
+      Caption = 'Kirish'
+      Flat = True
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clNavy
+      Font.Height = -19
+      Font.Name = 'Arial'
+      Font.Style = []
+      ParentFont = False
+      OnClick = SpeedButton1Click
+    end
+    object SpeedButton2: TSpeedButton
+      Left = 32
+      Top = 195
+      Width = 139
+      Height = 28
+      Cursor = crHandPoint
+      Caption = 'Chiqish'
+      Flat = True
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clNavy
+      Font.Height = -19
+      Font.Name = 'Arial'
+      Font.Style = []
+      ParentFont = False
+      OnClick = SpeedButton2Click
+    end
+    object SpeedButton3: TSpeedButton
+      Left = 32
+      Top = 294
+      Width = 139
+      Height = 28
+      Caption = 'Ok'
+      Flat = True
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clNavy
+      Font.Height = -19
+      Font.Name = 'Arial'
+      Font.Style = []
+      ParentFont = False
+      OnClick = SpeedButton3Click
+      OnMouseLeave = SpeedButton3MouseLeave
+      OnMouseMove = SpeedButton3MouseMove
+    end
+    object LabeledEdit1: TLabeledEdit
+      Left = 32
+      Top = 40
+      Width = 153
+      Height = 30
+      EditLabel.Width = 47
+      EditLabel.Height = 22
+      EditLabel.Caption = 'Login'
+      EditLabel.Font.Charset = RUSSIAN_CHARSET
+      EditLabel.Font.Color = clBlue
+      EditLabel.Font.Height = -19
+      EditLabel.Font.Name = 'Arial'
+      EditLabel.Font.Style = []
+      EditLabel.ParentFont = False
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clNavy
+      Font.Height = -19
+      Font.Name = 'Arial'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 0
+    end
+    object LabeledEdit2: TLabeledEdit
+      Left = 32
+      Top = 97
+      Width = 153
+      Height = 30
+      EditLabel.Width = 44
+      EditLabel.Height = 22
+      EditLabel.Caption = 'Parol'
+      EditLabel.Font.Charset = RUSSIAN_CHARSET
+      EditLabel.Font.Color = clBlue
+      EditLabel.Font.Height = -19
+      EditLabel.Font.Name = 'Arial'
+      EditLabel.Font.Style = []
+      EditLabel.ParentFont = False
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clNavy
+      Font.Height = -19
+      Font.Name = 'Arial'
+      Font.Style = []
+      ParentFont = False
+      PasswordChar = '*'
+      TabOrder = 1
+    end
+  end
+  object ComboBox1: TComboBox
+    Left = 32
+    Top = 258
+    Width = 153
+    Height = 22
+    Style = csSimple
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clNavy
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 1
+    Visible = False
+    Items.Strings = (
+      'Shifokorlar'
+      'Bemorlar')
+  end
+  object ADOQuery1: TADOQuery
+    Connection = Form_Shifokor.ADOConnection1
+    CursorType = ctStatic
+    Parameters = <>
+    SQL.Strings = (
+      'select *'
+      'from SHifoxona_boshligi')
+    Left = 176
+    Top = 80
+  end
+end

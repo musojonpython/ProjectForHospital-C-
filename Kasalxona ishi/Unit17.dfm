@@ -1,0 +1,60 @@
+object Dasturga_yordam: TDasturga_yordam
+  Left = 384
+  Top = 251
+  BorderStyle = bsDialog
+  Caption = 'Dasturga_yordam'
+  ClientHeight = 461
+  ClientWidth = 675
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesigned
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel3: TPanel
+    Left = 0
+    Top = 0
+    Width = 675
+    Height = 461
+    Align = alClient
+    BevelWidth = 2
+    BorderWidth = 5
+    Color = clSilver
+    ParentBackground = False
+    TabOrder = 0
+    object Memo1: TMemo
+      Left = 7
+      Top = 7
+      Width = 661
+      Height = 447
+      Align = alClient
+      Color = clHighlight
+      Enabled = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      Lines.Strings = (
+        
+          '     <<Dasturga yuzaga kelgan malumotlarni yoki dasturdan foydal' +
+          'anishga yo'#39'riqnoma>>'
+        
+          '       Agar kiritigan malumot oynada ko'#39'rinmasa yoki Login yoki ' +
+          'parolingiz kiritilsa uni '
+        
+          '  saqlasangiz agar Login va parolda xato berilsa "Qayta yuklash"' +
+          ' tugmasini bosing.'
+        '      '
+        ' '
+        ' ')
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 0
+    end
+  end
+end

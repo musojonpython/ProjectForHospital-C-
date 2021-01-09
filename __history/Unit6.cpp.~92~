@@ -1,0 +1,293 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include "Unit6.h"
+#include "Unit9.h"
+#include "Unit7.h"
+#include "Unit12.h"
+#include "Unit19.h"
+#include "Unit18.h"
+#include "Unit1.h"
+#include "Unit4.h"
+#include "Unit11.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+TForm_Shifokor *Form_Shifokor;
+bool sort = false;
+
+//---------------------------------------------------------------------------
+__fastcall TForm_Shifokor::TForm_Shifokor(TComponent* Owner)
+	: TForm(Owner)
+{
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm_Shifokor::SpeedButton11Click(TObject *Sender)
+{
+ Form_Bemorlar->Show();
+ Form_Bemorlar->Edit1->Visible = false;
+ Form_Bemorlar->Edit2->Visible = false;
+ Form_Bemorlar->Edit3->Visible = false;
+ Form_Bemorlar->MaskEdit1->Visible = true;
+ Form_Bemorlar->MaskEdit2->Visible = true;
+ Form_Bemorlar->MaskEdit3->Visible = true;
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm_Shifokor::FormClose(TObject *Sender, TCloseAction &Action)
+{
+ Form1->Show();
+ Form_Shifokor->Caption = "";
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm_Shifokor::LabeledEdit1Change(TObject *Sender)
+{
+  ADOQuery1->Close();
+  ADOQuery1->SQL->Clear();
+  ADOQuery1->SQL->Add("select * from Bemorlar_haqida");
+  ADOQuery1->SQL->Add("where");
+  ADOQuery1->SQL->Add("Familliya LIKE '" + LabeledEdit1->Text + "%'");
+  ADOQuery1->SQL->Add("and Ismi LIKE '" + LabeledEdit2->Text + "%'");
+  ADOQuery1->SQL->Add("and Kasalxonaga_kelgan_kuni LIKE '%" + MaskEdit1->Text + "%'");
+  ADOQuery1->SQL->Add("and Kasalxonadan_chiqarilgan_kun LIKE '%" + MaskEdit3->Text + "%'");
+  ADOQuery1->Open();
+  if (LabeledEdit1->Text == "") {
+  ADOQuery1->Close();
+  ADOQuery1->SQL->Clear();
+  ADOQuery1->SQL->Add("select * from Bemorlar_haqida");
+  ADOQuery1->SQL->Add("WHERE Shifokor_id = " + Shikorlar_Login_va_Parol->Edit1->Text);
+  ADOQuery1->Open();
+  }
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm_Shifokor::LabeledEdit2Change(TObject *Sender)
+{
+ ADOQuery1->Close();
+ ADOQuery1->SQL->Clear();
+ ADOQuery1->SQL->Add("select * from Bemorlar_haqida");
+ ADOQuery1->SQL->Add("where");
+ ADOQuery1->SQL->Add("Familliya LIKE '" + LabeledEdit1->Text + "%'");
+ ADOQuery1->SQL->Add("and Ismi LIKE '" + LabeledEdit2->Text + "%'");
+ ADOQuery1->SQL->Add("and Kasalxonaga_kelgan_kuni LIKE '%" + MaskEdit1->Text + "%'");
+ ADOQuery1->SQL->Add("and Kasalxonadan_chiqarilgan_kun LIKE '%" + MaskEdit3->Text + "%'");
+ ADOQuery1->Open();
+ if (LabeledEdit1->Text == "") {
+  ADOQuery1->Close();
+  ADOQuery1->SQL->Clear();
+  ADOQuery1->SQL->Add("select * from Bemorlar_haqida");
+  ADOQuery1->SQL->Add("WHERE Shifokor_id = " + Shikorlar_Login_va_Parol->Edit1->Text);
+  ADOQuery1->Open();
+ }
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm_Shifokor::SpeedButton9Click(TObject *Sender)
+{
+  Panel3->Visible = false;
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm_Shifokor::SpeedButton4Click(TObject *Sender)
+{
+  Panel3->Visible = true;
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm_Shifokor::SpeedButton7Click(TObject *Sender)
+{
+  Form_Malumotqoshish->Show();
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm_Shifokor::DBGrid1TitleClick(TColumn *Column)
+{
+   ADOQuery1->Close();
+   ADOQuery1->SQL->Clear();
+   if (sort) {
+	   sort = false;
+	   ADOQuery1->SQL->Add("select * from Bemorlar_haqida");
+	   ADOQuery1->SQL->Add(" where Shifokor_id = " + Shikorlar_Login_va_Parol->Edit1->Text);
+	   ADOQuery1->SQL->Add("Order by " + Column->FieldName + " DESC");
+
+
+   }
+   else
+   {
+	   sort = true;
+	   ADOQuery1->SQL->Add("select * from Bemorlar_haqida ");
+	   ADOQuery1->SQL->Add(" where Shifokor_id = " + Shikorlar_Login_va_Parol->Edit1->Text);
+	   ADOQuery1->SQL->Add(" Order by " + Column->FieldName + " ASC");
+   }
+   ADOQuery1->Open();
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm_Shifokor::SpeedButton2Click(TObject *Sender)
+{
+ Form_Bemorlar->Show();
+ ADOQuery1->Open();
+ ADOQuery1->Edit();
+ Form_Bemorlar->Edit1->Visible = true;
+ Form_Bemorlar->Edit2->Visible = true;
+ Form_Bemorlar->Edit3->Visible = true;
+ Form_Bemorlar->MaskEdit1->Visible = false;
+ Form_Bemorlar->MaskEdit2->Visible = false;
+ Form_Bemorlar->MaskEdit3->Visible = false;
+ Form_Bemorlar->Edit1->Text = ADOQuery1->FieldByName("Kasalxonaga_kelgan_kuni")->AsString;
+ Form_Bemorlar->Kasalxonaga_yotqizilgan_vaqt->Text = ADOQuery1->FieldByName("Kasalxonaga_kelgan_vaqti")->AsString;
+ Form_Bemorlar->Edit2->Text = ADOQuery1->FieldByName("Kasalxonadan_chiqarilgan_kun")->AsString;
+ Form_Bemorlar->Kasalxonadan_chiqarilgan_vaqt->Text = ADOQuery1->FieldByName("Kasalxonadan_chiqarilgan_vaqti")->AsString;
+ Form_Bemorlar->Xona->Text = ADOQuery1->FieldByName("Xona")->AsString;
+ Form_Bemorlar->Qaysi_bolimga_otkazildi->Text = ADOQuery1->FieldByName("Qaysi_bolimga_otkazilgan")->AsString;
+ Form_Bemorlar->Necha_kun_yotib_davolangan->Text = ADOQuery1->FieldByName("Necha_kun_yotib_davolangan")->AsString;
+ Form_Bemorlar->Bemorni_olib_yurish_turlari->Text = ADOQuery1->FieldByName("Bemorni_olib_yurish_turlari")->AsString;
+ Form_Bemorlar->Qon_guruhi->Text = ADOQuery1->FieldByName("Qon_guruhi")->AsString;
+ Form_Bemorlar->Rezus_mansubligi->Text = ADOQuery1->FieldByName("Rezus_mansubligi")->AsString;
+ Form_Bemorlar->Dorilarning_nojoya_tasiri->Text = ADOQuery1->FieldByName("Dorilarning_nojoya_tasiri")->AsString;
+ Form_Bemorlar->Familiyasi->Text = ADOQuery1->FieldByName("Familliya")->AsString;
+ Form_Bemorlar->Ismi->Text = ADOQuery1->FieldByName("Ismi")->AsString;
+ Form_Bemorlar->JInsi->Text = ADOQuery1->FieldByName("Jinsi")->AsString;
+ Form_Bemorlar->Yoshi->Text = ADOQuery1->FieldByName("Yoshi")->AsString;
+ Form_Bemorlar->Doimiy_yashash_joyi->Text = ADOQuery1->FieldByName("Doimiy_yashash_joyi")->AsString;
+ Form_Bemorlar->Ish_joyi_kasbi->Text = ADOQuery1->FieldByName("Ish_joyi_kasbi_lavozimi")->AsString;
+ Form_Bemorlar->Bemor_qayerdan_yuborilgan->Text = ADOQuery1->FieldByName("Bemor_qayerdan_yuborilgan")->AsString;
+ Form_Bemorlar->Holati->Text = ADOQuery1->FieldByName("Kasalxonaga_shoshilinch_ravishda_keltirilgan")->AsString;
+ Form_Bemorlar->qanday_transportda->Text = ADOQuery1->FieldByName("Qanday_transportda")->AsString;
+ Form_Bemorlar->bemor_yollanmasidagi_tashhisi->Text = ADOQuery1->FieldByName("Bemor_yollanmasidagi_tashxis")->AsString;
+ Form_Bemorlar->Qabulxonada_qoyilgan_tashhis->Text = ADOQuery1->FieldByName("Qabulxonada_qoyilgan_tashxis")->AsString;
+ Form_Bemorlar->Kasalxonada_qoyilgan_tashhis->Text = ADOQuery1->FieldByName("Kasalxonada_qoyilgan_tashxis")->AsString;
+ Form_Bemorlar->Asosiy->Text = ADOQuery1->FieldByName("Asosiy")->AsString;
+ Form_Bemorlar->Asosiy_kasallik_asorati->Text = ADOQuery1->FieldByName("Asosiy_kasallikning_asorati")->AsString;
+ Form_Bemorlar->Aniqlangan_xamroh_kasalliklr->Text = ADOQuery1->FieldByName("Aniqlangan_xamrox_kasalliklar")->AsString;
+ Form_Bemorlar->Kasalxonaga_yotishi->Text = ADOQuery1->FieldByName("Kasalxonada_yotishi")->AsString;
+ Form_Bemorlar->Hammasi_bolib->Text = ADOQuery1->FieldByName("Hammasi_bolib")->AsString;
+ Form_Bemorlar->Operasiya_nomi->Text = ADOQuery1->FieldByName("Operatsiya_nomi")->AsString;
+ Form_Bemorlar->Operasiya_qiluvchi->Text = ADOQuery1->FieldByName("Operatsiya_qiluvchi")->AsString;
+ Form_Bemorlar->Davolashning_boshqa_turlari->Text = ADOQuery1->FieldByName("Davolashning_boshqa_turlari")->AsString;
+ Form_Bemorlar->Mexnatga_yaroqsizlik_varogi->Text = ADOQuery1->FieldByName("Mehnatga_yaroqsizlik_varogi_yoki_malumotnoma")->AsString;
+ Form_Bemorlar->Davolash_natijasi->Text = ADOQuery1->FieldByName("Davolash_natijasi")->AsString;
+ Form_Bemorlar->Ekspertizaga_yuborish_uchun->Text = ADOQuery1->FieldByName("Ekspertizaga_yuborish_uchun_xulosa")->AsString;
+ Form_Bemorlar->Alohida_belgilari->Text = ADOQuery1->FieldByName("Alohida_belgilar")->AsString;
+ Form_Bemorlar->Qabul_qilinganda_tekshirildi->Text = ADOQuery1->FieldByName("Qabul_qilingan_tekshiruv")->AsString;
+ Form_Bemorlar->Davolash_shifokori->Text = ADOQuery1->FieldByName("Davolash_shifokori")->AsString;
+ Form_Bemorlar->Bolim_mudiri->Text = ADOQuery1->FieldByName("Bolim_mudiri")->AsString;
+ Form4->RichEdit5->Text = ADOQuery1->FieldByName("Qabulxona_shifokorining_yozuvi")->AsString;
+ Form4->RichEdit3->Text = ADOQuery1->FieldByName("Shikoyatlar_kasallik_tarixi")->AsString;
+ Form4->RichEdit2->Text = ADOQuery1->FieldByName("Xotima")->AsString;
+ Form4->Memo1->Text = ADOQuery1->FieldByName("Patologoanatom_xulosasi")->AsString;
+ Form4->Kasalxonada_qoyilgan_tashhis->Text = ADOQuery1->FieldByName("Patologoanatom_xulosasi_asosiy")->AsString;
+ Form_Bemorlar->Muassasaning_nomi->Text = ADOQuery1->FieldByName("Muassasaning_nomi")->AsString;
+ Form_Bemorlar->Muassasaning_kodi->Text = ADOQuery1->FieldByName("Muassasa_kodi")->AsString;
+ Form_Bemorlar->Edit3->Text = ADOQuery1->FieldByName("Kasallik_aniqlangan_sana")->AsString;
+ Form_Bemorlar->Operatsiya_Vaqti->Text = ADOQuery1->FieldByName("Operatsiya_vaqt_soati")->AsString;
+ Form_Bemorlar->Ogriqsizlantirish_usuli->Text = ADOQuery1->FieldByName("Operatsiyada_ogriqsizlantiruvchi_usul")->AsString;
+ Form_Bemorlar->Asoratlar->Text = ADOQuery1->FieldByName("Operatsiya_asoratlari")->AsString;
+ Form4->LabeledEdit1->Text = ADOQuery1->FieldByName("Patologoanatom_asosiy_kasallik")->AsString;
+ Form4->LabeledEdit2->Text = ADOQuery1->FieldByName("Patologoanatom_Yoldosh_kassalliklar")->AsString;
+ Form4->LabeledEdit3->Text = ADOQuery1->FieldByName("Patologoanatom_shifokor_ismi")->AsString;
+ Form4->RichEdit1->Text = ADOQuery1->FieldByName("Kundalik")->AsString;
+ Form_Bemorlar->Xona->Text = ADOQuery1->FieldByName("Xona")->AsString;
+
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm_Shifokor::SpeedButton3Click(TObject *Sender)
+{
+   String fam, ismi;
+   ADOQuery1->Open();
+   ADOQuery1->Edit();
+   fam = ADOQuery1->FieldByName("Familliya")->AsString;
+   ismi = ADOQuery1->FieldByName("Ismi")->AsString;
+	if(MessageDlg("Familiyasi " + fam + " Ismi " + ismi + " teng bo'lgan bemor malumotlarini o'chiishni hoxlaysizmi?", mtConfirmation, TMsgDlgButtons() << mbYes << mbNo, 0) == mrYes)
+	{
+	ADOQuery1->Delete();
+   }
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm_Shifokor::SpeedButton6Click(TObject *Sender)
+{
+Form_Word_uchun->Show();
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm_Shifokor::MaskEdit1Change(TObject *Sender)
+{
+ ADOQuery1->Close();
+ ADOQuery1->SQL->Clear();
+ ADOQuery1->SQL->Add("select * from Bemorlar_haqida");
+ ADOQuery1->SQL->Add("where");
+ ADOQuery1->SQL->Add("Familliya LIKE '" + LabeledEdit1->Text + "%'");
+ ADOQuery1->SQL->Add("and Ismi LIKE '" + LabeledEdit2->Text + "%'");
+ ADOQuery1->SQL->Add("and Kasalxonaga_kelgan_kuni LIKE '%" + MaskEdit1->Text + "%'");
+ ADOQuery1->SQL->Add("and Kasalxonadan_chiqarilgan_kun LIKE '%" + MaskEdit3->Text + "%'");
+ ADOQuery1->Open();
+ if (LabeledEdit1->Text == "") {
+  ADOQuery1->Close();
+  ADOQuery1->SQL->Clear();
+  ADOQuery1->SQL->Add("select * from Bemorlar_haqida");
+  ADOQuery1->SQL->Add("WHERE Shifokor_id = " + Shikorlar_Login_va_Parol->Edit1->Text);
+  ADOQuery1->Open();
+ }
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm_Shifokor::MaskEdit3Change(TObject *Sender)
+{
+ ADOQuery1->Close();
+ ADOQuery1->SQL->Clear();
+ ADOQuery1->SQL->Add("select * from Bemorlar_haqida");
+ ADOQuery1->SQL->Add("where");
+ ADOQuery1->SQL->Add("Familliya LIKE '" + LabeledEdit1->Text + "%'");
+ ADOQuery1->SQL->Add("and Ismi LIKE '" + LabeledEdit2->Text + "%'");
+ ADOQuery1->SQL->Add("and Kasalxonaga_kelgan_kuni LIKE '%" + MaskEdit1->Text + "%'");
+ ADOQuery1->SQL->Add("and Kasalxonadan_chiqarilgan_kun LIKE '%" + MaskEdit3->Text + "%'");
+ ADOQuery1->Open();
+ if (LabeledEdit1->Text == "") {
+ ADOQuery1->Close();
+ ADOQuery1->SQL->Clear();
+ ADOQuery1->SQL->Add("select * from Bemorlar_haqida");
+ ADOQuery1->SQL->Add("WHERE Shifokor_id = " + Shikorlar_Login_va_Parol->Edit1->Text);
+ ADOQuery1->Open();
+ }
+}
+//---------------------------------------------------------------------------
+
+
+
+
+
+void __fastcall TForm_Shifokor::Qadiruvsistemasiniochish1Click(TObject *Sender)
+{
+  Panel2->Visible = true;
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm_Shifokor::Qadiruvsistemasiniyopish1Click(TObject *Sender)
+{
+    Panel2->Visible = false;
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm_Shifokor::FormActivate(TObject *Sender)
+{
+   Panel2->Visible = false;
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm_Shifokor::Chiqish2Click(TObject *Sender)
+{
+   Close();
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm_Shifokor::Asosiyoynagaotish1Click(TObject *Sender)
+{
+ Form_Shifokor->Hide();
+ Form1->Show();
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm_Shifokor::Loginvaparoloynasigaotish1Click(TObject *Sender)
+{
+  Form_Shifokor->Hide();
+  Shikorlar_Login_va_Parol->Show();
+}
+//---------------------------------------------------------------------------
+

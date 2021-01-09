@@ -1,0 +1,16 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include "Unit2.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+TShifokorlar_malumotlarni_ozgartirish *Shifokorlar_malumotlarni_ozgartirish;
+//---------------------------------------------------------------------------
+__fastcall TShifokorlar_malumotlarni_ozgartirish::TShifokorlar_malumotlarni_ozgartirish(TComponent* Owner)
+	: TForm(Owner)
+{
+}
+//---------------------------------------------------------------------------

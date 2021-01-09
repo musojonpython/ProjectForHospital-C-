@@ -1,0 +1,26 @@
+//---------------------------------------------------------------------------
+
+#ifndef Unit10H
+#define Unit10H
+//---------------------------------------------------------------------------
+#include <Classes.hpp>
+#include <Controls.hpp>
+#include <StdCtrls.hpp>
+#include <Forms.hpp>
+#include <Grids.hpp>
+#include <ADODB.hpp>
+#include <DB.hpp>
+#include <DBGrids.hpp>
+//---------------------------------------------------------------------------
+class TLabaratoriya_ishi : public TForm
+{
+__published:	// IDE-managed Components
+	TADOQuery *ADOQuery1;
+private:	// User declarations
+public:		// User declarations
+	__fastcall TLabaratoriya_ishi(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TLabaratoriya_ishi *Labaratoriya_ishi;
+//---------------------------------------------------------------------------
+#endif

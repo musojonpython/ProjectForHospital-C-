@@ -1,0 +1,17 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include "Unit10.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+TLabaratoriya_ishi *Labaratoriya_ishi;
+//---------------------------------------------------------------------------
+__fastcall TLabaratoriya_ishi::TLabaratoriya_ishi(TComponent* Owner)
+	: TForm(Owner)
+{
+}
+//---------------------------------------------------------------------------
+

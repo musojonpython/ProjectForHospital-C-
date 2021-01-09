@@ -1,0 +1,832 @@
+object Form_Malumotqoshish: TForm_Malumotqoshish
+  Left = 0
+  Top = 0
+  BorderStyle = bsDialog
+  Caption = 'Malumot qo'#39'shish'
+  ClientHeight = 565
+  ClientWidth = 611
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesigned
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 611
+    Height = 565
+    Align = alClient
+    Color = clHighlight
+    ParentBackground = False
+    TabOrder = 0
+    object SpeedButton1: TSpeedButton
+      Left = 297
+      Top = 495
+      Width = 89
+      Height = 22
+      Caption = 'Ok'
+      Flat = True
+      OnClick = SpeedButton1Click
+      OnMouseLeave = SpeedButton1MouseLeave
+      OnMouseMove = SpeedButton1MouseMove
+    end
+    object SpeedButton2: TSpeedButton
+      Left = 297
+      Top = 523
+      Width = 89
+      Height = 22
+      Caption = 'Chiqish'
+      Flat = True
+      OnClick = SpeedButton2Click
+      OnMouseLeave = SpeedButton2MouseLeave
+      OnMouseMove = SpeedButton2MouseMove
+    end
+    object Panel2: TPanel
+      Left = 21
+      Top = 0
+      Width = 556
+      Height = 489
+      BevelInner = bvSpace
+      BevelKind = bkFlat
+      BorderStyle = bsSingle
+      TabOrder = 0
+      object CheckBox1: TCheckBox
+        Left = 13
+        Top = 7
+        Width = 97
+        Height = 17
+        Caption = 'I_d'
+        Font.Charset = RUSSIAN_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -15
+        Font.Name = 'Arial'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 0
+      end
+      object CheckBox2: TCheckBox
+        Left = 12
+        Top = 26
+        Width = 209
+        Height = 17
+        Caption = 'Kasalxonaga kelgan kun'
+        Font.Charset = RUSSIAN_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -15
+        Font.Name = 'Arial'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 1
+      end
+      object CheckBox3: TCheckBox
+        Left = 12
+        Top = 43
+        Width = 209
+        Height = 17
+        Caption = 'Kasalxonaga kelgan vaqti'
+        Font.Charset = RUSSIAN_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -15
+        Font.Name = 'Arial'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 2
+      end
+      object CheckBox4: TCheckBox
+        Left = 12
+        Top = 60
+        Width = 209
+        Height = 17
+        Caption = 'Kasalxonadan chiqarigan kun'
+        Font.Charset = RUSSIAN_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -15
+        Font.Name = 'Arial'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 3
+      end
+      object CheckBox5: TCheckBox
+        Left = 13
+        Top = 77
+        Width = 222
+        Height = 17
+        Caption = 'Kasalxonadan chiqarilgan vaqti'
+        Font.Charset = RUSSIAN_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -15
+        Font.Name = 'Arial'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 4
+      end
+      object CheckBox6: TCheckBox
+        Left = 13
+        Top = 94
+        Width = 209
+        Height = 17
+        Caption = 'Xona'
+        Font.Charset = RUSSIAN_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -15
+        Font.Name = 'Arial'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 5
+      end
+      object CheckBox7: TCheckBox
+        Left = 13
+        Top = 111
+        Width = 209
+        Height = 17
+        Caption = 'Qaysi bo'#39'limga o'#39'tkazilgan'
+        Font.Charset = RUSSIAN_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -15
+        Font.Name = 'Arial'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 6
+      end
+      object CheckBox8: TCheckBox
+        Left = 13
+        Top = 129
+        Width = 209
+        Height = 17
+        Caption = 'Necha kun yotib davolangan'
+        Font.Charset = RUSSIAN_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -15
+        Font.Name = 'Arial'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 7
+      end
+      object CheckBox9: TCheckBox
+        Left = 13
+        Top = 146
+        Width = 209
+        Height = 17
+        Caption = 'Bemorni olib yurish turlari'
+        Font.Charset = RUSSIAN_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -15
+        Font.Name = 'Arial'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 8
+      end
+      object CheckBox10: TCheckBox
+        Left = 13
+        Top = 163
+        Width = 211
+        Height = 17
+        Caption = 'Qon guruhi'
+        Font.Charset = RUSSIAN_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -15
+        Font.Name = 'Arial'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 9
+      end
+      object CheckBox11: TCheckBox
+        Left = 13
+        Top = 181
+        Width = 210
+        Height = 17
+        Caption = 'Rezus mansubligi'
+        Font.Charset = RUSSIAN_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -15
+        Font.Name = 'Arial'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 10
+      end
+      object CheckBox12: TCheckBox
+        Left = 14
+        Top = 198
+        Width = 209
+        Height = 17
+        Caption = 'Dorilarning nojo'#39'ya tasiri'
+        Font.Charset = RUSSIAN_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -15
+        Font.Name = 'Arial'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 11
+      end
+      object CheckBox13: TCheckBox
+        Left = 13
+        Top = 216
+        Width = 209
+        Height = 17
+        Caption = 'Familiya '
+        Font.Charset = RUSSIAN_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -15
+        Font.Name = 'Arial'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 12
+      end
+      object CheckBox14: TCheckBox
+        Left = 13
+        Top = 233
+        Width = 209
+        Height = 17
+        Caption = 'Ismi'
+        Font.Charset = RUSSIAN_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -15
+        Font.Name = 'Arial'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 13
+      end
+      object CheckBox15: TCheckBox
+        Left = 13
+        Top = 249
+        Width = 209
+        Height = 17
+        Caption = 'Jinsi'
+        Font.Charset = RUSSIAN_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -15
+        Font.Name = 'Arial'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 14
+      end
+      object CheckBox16: TCheckBox
+        Left = 13
+        Top = 267
+        Width = 209
+        Height = 17
+        Caption = 'Yoshi'
+        Font.Charset = RUSSIAN_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -15
+        Font.Name = 'Arial'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 15
+      end
+      object CheckBox17: TCheckBox
+        Left = 13
+        Top = 284
+        Width = 172
+        Height = 17
+        Caption = 'Doimiy yashash joyi'
+        Font.Charset = RUSSIAN_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -15
+        Font.Name = 'Arial'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 16
+      end
+      object CheckBox18: TCheckBox
+        Left = 12
+        Top = 303
+        Width = 210
+        Height = 17
+        Caption = 'Ish joyi kasbi lavozimi'
+        Font.Charset = RUSSIAN_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -15
+        Font.Name = 'Arial'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 17
+      end
+      object CheckBox19: TCheckBox
+        Left = 12
+        Top = 320
+        Width = 209
+        Height = 17
+        Caption = 'Bemor qaerdan yuborilgan'
+        Font.Charset = RUSSIAN_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -15
+        Font.Name = 'Arial'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 18
+      end
+      object CheckBox20: TCheckBox
+        Left = 12
+        Top = 337
+        Width = 261
+        Height = 17
+        Caption = 'Kasalxonaga qandey holatda  keltirildi'
+        Font.Charset = RUSSIAN_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -15
+        Font.Name = 'Arial'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 19
+      end
+      object CheckBox21: TCheckBox
+        Left = 13
+        Top = 354
+        Width = 222
+        Height = 17
+        Caption = 'Qandey transportda '
+        Font.Charset = RUSSIAN_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -15
+        Font.Name = 'Arial'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 20
+      end
+      object CheckBox22: TCheckBox
+        Left = 13
+        Top = 371
+        Width = 222
+        Height = 17
+        Caption = 'Bemor yo'#39'llanmasidagi tashxis'
+        Font.Charset = RUSSIAN_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -15
+        Font.Name = 'Arial'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 21
+      end
+      object CheckBox23: TCheckBox
+        Left = 13
+        Top = 388
+        Width = 222
+        Height = 17
+        Caption = 'Qabulxonada qo'#39'yilgan tashxis'
+        Font.Charset = RUSSIAN_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -15
+        Font.Name = 'Arial'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 22
+      end
+      object CheckBox24: TCheckBox
+        Left = 13
+        Top = 406
+        Width = 209
+        Height = 17
+        Caption = 'Asosiy'
+        Font.Charset = RUSSIAN_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -15
+        Font.Name = 'Arial'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 23
+      end
+      object CheckBox25: TCheckBox
+        Left = 13
+        Top = 423
+        Width = 209
+        Height = 17
+        Caption = 'Asosiy kasallikning asorati'
+        Font.Charset = RUSSIAN_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -15
+        Font.Name = 'Arial'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 24
+      end
+      object CheckBox26: TCheckBox
+        Left = 14
+        Top = 441
+        Width = 212
+        Height = 17
+        Caption = 'Aniqlangan xamrox kasalliklar'
+        Font.Charset = RUSSIAN_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -15
+        Font.Name = 'Arial'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 25
+      end
+      object CheckBox27: TCheckBox
+        Left = 13
+        Top = 458
+        Width = 209
+        Height = 17
+        Caption = 'Kasalxonada yotishi'
+        Font.Charset = RUSSIAN_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -15
+        Font.Name = 'Arial'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 26
+      end
+      object CheckBox28: TCheckBox
+        Left = 290
+        Top = 7
+        Width = 209
+        Height = 17
+        Caption = 'Hammasi bo'#39'lib'
+        Font.Charset = RUSSIAN_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -15
+        Font.Name = 'Arial'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 27
+      end
+      object CheckBox29: TCheckBox
+        Left = 290
+        Top = 26
+        Width = 209
+        Height = 17
+        Caption = 'Operatsiya nomi'
+        Font.Charset = RUSSIAN_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -15
+        Font.Name = 'Arial'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 28
+      end
+      object CheckBox30: TCheckBox
+        Left = 290
+        Top = 43
+        Width = 209
+        Height = 17
+        Caption = 'Operatsiya qiluvchi'
+        Font.Charset = RUSSIAN_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -15
+        Font.Name = 'Arial'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 29
+      end
+      object CheckBox31: TCheckBox
+        Left = 290
+        Top = 60
+        Width = 209
+        Height = 17
+        Caption = 'Davolashning boshqa turlari'
+        Font.Charset = RUSSIAN_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -15
+        Font.Name = 'Arial'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 30
+      end
+      object CheckBox32: TCheckBox
+        Left = 290
+        Top = 78
+        Width = 208
+        Height = 17
+        Caption = 'Mehnatga yaroqsizlik varog'#39'i'
+        Font.Charset = RUSSIAN_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -15
+        Font.Name = 'Arial'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 31
+      end
+      object CheckBox33: TCheckBox
+        Left = 291
+        Top = 94
+        Width = 209
+        Height = 17
+        Caption = 'Davolash natijasi'
+        Font.Charset = RUSSIAN_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -15
+        Font.Name = 'Arial'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 32
+      end
+      object CheckBox34: TCheckBox
+        Left = 291
+        Top = 111
+        Width = 209
+        Height = 17
+        Caption = 'Mehnat qobiliyati'
+        Font.Charset = RUSSIAN_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -15
+        Font.Name = 'Arial'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 33
+      end
+      object CheckBox35: TCheckBox
+        Left = 292
+        Top = 129
+        Width = 209
+        Height = 17
+        Caption = 'Ekspertizaga yuborish'
+        Font.Charset = RUSSIAN_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -15
+        Font.Name = 'Arial'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 34
+      end
+      object CheckBox36: TCheckBox
+        Left = 292
+        Top = 146
+        Width = 222
+        Height = 17
+        Caption = 'Alohida belgilar'
+        Font.Charset = RUSSIAN_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -15
+        Font.Name = 'Arial'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 35
+      end
+      object CheckBox37: TCheckBox
+        Left = 292
+        Top = 163
+        Width = 209
+        Height = 17
+        Caption = 'Qabul qilingan tekshiruv'
+        Font.Charset = RUSSIAN_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -15
+        Font.Name = 'Arial'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 36
+      end
+      object CheckBox38: TCheckBox
+        Left = 292
+        Top = 181
+        Width = 209
+        Height = 17
+        Caption = 'Davolash shifokori'
+        Font.Charset = RUSSIAN_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -15
+        Font.Name = 'Arial'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 37
+      end
+      object CheckBox39: TCheckBox
+        Left = 291
+        Top = 198
+        Width = 209
+        Height = 17
+        Caption = 'Bo'#39'lim mudiri'
+        Font.Charset = RUSSIAN_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -15
+        Font.Name = 'Arial'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 38
+      end
+      object CheckBox40: TCheckBox
+        Left = 291
+        Top = 216
+        Width = 236
+        Height = 17
+        Caption = 'Qabulxona shifokorining yozuvi'
+        Font.Charset = RUSSIAN_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -15
+        Font.Name = 'Arial'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 39
+      end
+      object CheckBox41: TCheckBox
+        Left = 292
+        Top = 233
+        Width = 209
+        Height = 17
+        Caption = 'Shikoyatlar kasallik tarixi'
+        Font.Charset = RUSSIAN_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -15
+        Font.Name = 'Arial'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 40
+      end
+      object CheckBox42: TCheckBox
+        Left = 291
+        Top = 249
+        Width = 209
+        Height = 17
+        Caption = 'Xotima'
+        Font.Charset = RUSSIAN_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -15
+        Font.Name = 'Arial'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 41
+      end
+      object CheckBox43: TCheckBox
+        Left = 292
+        Top = 266
+        Width = 209
+        Height = 17
+        Caption = 'Patologoanatom xulosasi'
+        Font.Charset = RUSSIAN_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -15
+        Font.Name = 'Arial'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 42
+      end
+      object CheckBox44: TCheckBox
+        Left = 291
+        Top = 284
+        Width = 236
+        Height = 17
+        Caption = 'Patologoanatom xulosasi asosiy'
+        Font.Charset = RUSSIAN_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -15
+        Font.Name = 'Arial'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 43
+      end
+      object CheckBox45: TCheckBox
+        Left = 292
+        Top = 301
+        Width = 209
+        Height = 17
+        Caption = 'Muassasa kodi'
+        Font.Charset = RUSSIAN_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -15
+        Font.Name = 'Arial'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 44
+      end
+      object CheckBox46: TCheckBox
+        Left = 292
+        Top = 320
+        Width = 209
+        Height = 17
+        Caption = 'Muassasa nomi'
+        Font.Charset = RUSSIAN_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -15
+        Font.Name = 'Arial'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 45
+      end
+      object CheckBox47: TCheckBox
+        Left = 293
+        Top = 337
+        Width = 209
+        Height = 17
+        Caption = 'Kasallik aniqlangan sana'
+        Font.Charset = RUSSIAN_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -15
+        Font.Name = 'Arial'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 46
+      end
+      object CheckBox48: TCheckBox
+        Left = 293
+        Top = 354
+        Width = 172
+        Height = 17
+        Caption = 'Operatsiya vaqti'
+        Font.Charset = RUSSIAN_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -15
+        Font.Name = 'Arial'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 47
+      end
+      object CheckBox49: TCheckBox
+        Left = 293
+        Top = 373
+        Width = 261
+        Height = 17
+        Caption = 'Operatsiyada og'#39'riqsizlantiruvchi usul'
+        Font.Charset = RUSSIAN_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -15
+        Font.Name = 'Arial'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 48
+      end
+      object CheckBox50: TCheckBox
+        Left = 294
+        Top = 389
+        Width = 209
+        Height = 17
+        Caption = 'Operatsiya asoratlari'
+        Font.Charset = RUSSIAN_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -15
+        Font.Name = 'Arial'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 49
+      end
+      object CheckBox51: TCheckBox
+        Left = 293
+        Top = 407
+        Width = 261
+        Height = 17
+        Caption = 'Patologoanatom asosiy kasallik'
+        Font.Charset = RUSSIAN_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -15
+        Font.Name = 'Arial'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 50
+      end
+      object CheckBox52: TCheckBox
+        Left = 293
+        Top = 424
+        Width = 222
+        Height = 17
+        Caption = 'Patologoanatom yo'#39'ldosh kasalliklar '
+        Font.Charset = RUSSIAN_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -15
+        Font.Name = 'Arial'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 51
+      end
+      object CheckBox53: TCheckBox
+        Left = 292
+        Top = 441
+        Width = 222
+        Height = 17
+        Caption = 'Patologoanatom shifokor ismi'
+        Font.Charset = RUSSIAN_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -15
+        Font.Name = 'Arial'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 52
+      end
+    end
+    object Hammasini_belgilash: TCheckBox
+      Left = 26
+      Top = 519
+      Width = 171
+      Height = 17
+      Caption = 'Hammasini belgilash'
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'Arial'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 1
+      OnClick = Hammasini_belgilashClick
+    end
+    object Hammasini_ochirish: TCheckBox
+      Left = 27
+      Top = 496
+      Width = 171
+      Height = 17
+      Caption = 'Hammasini o'#39'chirish'
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'Arial'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 2
+      OnClick = Hammasini_ochirishClick
+    end
+  end
+end

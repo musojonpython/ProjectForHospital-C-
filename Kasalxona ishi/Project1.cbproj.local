@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2016.11.14 10:40:33.296.cpp,C:\Users\Toshiba\Documents\RAD Studio\Projects\Unit7.cpp=E:\Boshladik\Unit1.cpp</Transaction>
+    <Transaction>2016.11.14 10:40:33.296.h,C:\Users\Toshiba\Documents\RAD Studio\Projects\Unit7.h=E:\Boshladik\Unit1.h</Transaction>
+    <Transaction>2016.11.14 10:40:33.296.dfm,C:\Users\Toshiba\Documents\RAD Studio\Projects\Unit7.dfm=E:\Boshladik\Unit1.dfm</Transaction>
+    <Transaction>2016.11.14 10:40:43.711.cbproj,C:\Users\Toshiba\Documents\RAD Studio\Projects\Project6.cbproj=E:\Boshladik\Project1.cbproj</Transaction>
+    <Transaction>2016.11.28 10:47:23.735.cpp,E:\Boshladik\Loyiha ishi\Unit2.cpp=</Transaction>
+    <Transaction>2016.11.28 10:47:23.735.dfm,E:\Boshladik\Loyiha ishi\Unit2.dfm=</Transaction>
+    <Transaction>2016.11.28 12:02:33.109.cpp,E:\Boshladik\Loyiha ishi\Unit11.cpp=</Transaction>
+    <Transaction>2016.11.28 12:02:33.109.dfm,E:\Boshladik\Loyiha ishi\Unit11.dfm=</Transaction>
+    <Transaction>2016.11.28 17:37:43.397.cpp,E:\Boshladik\Loyiha ishi\Unit8.cpp=</Transaction>
+    <Transaction>2016.11.28 17:37:43.397.dfm,E:\Boshladik\Loyiha ishi\Unit8.dfm=</Transaction>
+    <Transaction>2017.01.11 19:36:42.398.cpp,E:\Boshladik\Loyiha ishi\Unit14.cpp=</Transaction>
+    <Transaction>2017.01.11 19:36:42.398.dfm,E:\Boshladik\Loyiha ishi\Unit14.dfm=</Transaction>
+    <Transaction>2017.01.11 19:37:04.971.cpp,E:\Boshladik\Loyiha ishi\Unit5.cpp=</Transaction>
+    <Transaction>2017.01.11 19:37:04.971.dfm,E:\Boshladik\Loyiha ishi\Unit5.dfm=</Transaction>
+    <Transaction>2017.01.11 19:39:01.012.cpp,E:\Boshladik\Loyiha ishi\Unit10.cpp=</Transaction>
+    <Transaction>2017.01.11 19:39:01.012.dfm,E:\Boshladik\Loyiha ishi\Unit10.dfm=</Transaction>
+    <Transaction>2017.01.11 19:39:18.033.cpp,E:\Boshladik\Loyiha ishi\Unit4.cpp=</Transaction>
+    <Transaction>2017.01.11 19:39:18.033.dfm,E:\Boshladik\Loyiha ishi\Unit4.dfm=</Transaction>
+    <Transaction>2017.02.09 14:44:12.666.cpp,E:\Boshladik\Ishdan Kopiya da ishla\Loyiha ishi — копия\Unit5.cpp=E:\Boshladik\Ishdan Kopiya da ishla\Loyiha ishi — копия\Shikoyatlar.cpp</Transaction>
+    <Transaction>2017.02.09 14:44:12.666.h,E:\Boshladik\Ishdan Kopiya da ishla\Loyiha ishi — копия\Unit5.h=E:\Boshladik\Ishdan Kopiya da ishla\Loyiha ishi — копия\Shikoyatlar.h</Transaction>
+    <Transaction>2017.02.09 14:44:12.666.dfm,E:\Boshladik\Ishdan Kopiya da ishla\Loyiha ishi — копия\Unit5.dfm=E:\Boshladik\Ishdan Kopiya da ishla\Loyiha ishi — копия\Shikoyatlar.dfm</Transaction>
+    <Transaction>2017.02.09 14:47:11.448.cpp,E:\Boshladik\Ishdan Kopiya da ishla\Loyiha ishi — копия\Unit8.cpp=E:\Boshladik\Ishdan Kopiya da ishla\Loyiha ishi — копия\Unit8_Kundalik.cpp</Transaction>
+    <Transaction>2017.02.09 14:47:11.448.h,E:\Boshladik\Ishdan Kopiya da ishla\Loyiha ishi — копия\Unit8.h=E:\Boshladik\Ishdan Kopiya da ishla\Loyiha ishi — копия\Unit8_Kundalik.h</Transaction>
+    <Transaction>2017.02.09 14:47:11.448.dfm,E:\Boshladik\Ishdan Kopiya da ishla\Loyiha ishi — копия\Unit8.dfm=E:\Boshladik\Ishdan Kopiya da ishla\Loyiha ishi — копия\Unit8_Kundalik.dfm</Transaction>
+    <Transaction>2017.02.16 10:54:31.471.cpp,E:\Boshladik\Ishdan Kopiya da ishla\Loyiha ishi — копия\Unit3.cpp=</Transaction>
+    <Transaction>2017.02.16 10:54:31.471.dfm,E:\Boshladik\Ishdan Kopiya da ishla\Loyiha ishi — копия\Unit3.dfm=</Transaction>
+    <Transaction>2017.02.19 14:56:00.175.cpp,E:\Boshladik\Ishdan Kopiya da ishla\Loyiha ishi — копия\Unit18.cpp=</Transaction>
+    <Transaction>2017.02.19 14:56:00.175.dfm,E:\Boshladik\Ishdan Kopiya da ishla\Loyiha ishi — копия\Unit18.dfm=</Transaction>
+    <Transaction>2017.02.19 14:56:07.727.cpp,E:\Boshladik\Ishdan Kopiya da ishla\Loyiha ishi — копия\Unit14.cpp=</Transaction>
+    <Transaction>2017.02.19 14:56:07.727.dfm,E:\Boshladik\Ishdan Kopiya da ishla\Loyiha ishi — копия\Unit14.dfm=</Transaction>
+    <Transaction>2017.02.22 23:54:01.114.cpp,E:\Boshladik\Ishdan Kopiya da ishla\Loyiha ishi — копия\Unit19.cpp=</Transaction>
+    <Transaction>2017.02.22 23:54:01.114.dfm,E:\Boshladik\Ishdan Kopiya da ishla\Loyiha ishi — копия\Unit19.dfm=</Transaction>
+    <Transaction>2017.02.23 00:11:31.185.cpp,E:\Boshladik\Ishdan Kopiya da ishla\Loyiha ishi — копия\Unit2.cpp=</Transaction>
+    <Transaction>2017.02.23 00:11:31.185.dfm,E:\Boshladik\Ishdan Kopiya da ishla\Loyiha ishi — копия\Unit2.dfm=</Transaction>
+    <Transaction>2017.02.23 16:50:28.230.cpp,E:\Boshladik\Ishdan Kopiya da ishla\Loyiha ishi — копия\Unit8.cpp=</Transaction>
+    <Transaction>2017.02.23 16:50:28.230.dfm,E:\Boshladik\Ishdan Kopiya da ishla\Loyiha ishi — копия\Unit8.dfm=</Transaction>
+    <Transaction>2017.02.23 16:50:36.876.cpp,E:\Boshladik\Ishdan Kopiya da ishla\Loyiha ishi — копия\Unit10.cpp=</Transaction>
+    <Transaction>2017.02.23 16:50:36.876.dfm,E:\Boshladik\Ishdan Kopiya da ishla\Loyiha ishi — копия\Unit10.dfm=</Transaction>
+    <Transaction>2017.02.23 16:50:45.207.cpp,E:\Boshladik\Ishdan Kopiya da ishla\Loyiha ishi — копия\Unit8_Kundalik.cpp=</Transaction>
+    <Transaction>2017.02.23 16:50:45.207.dfm,E:\Boshladik\Ishdan Kopiya da ishla\Loyiha ishi — копия\Unit8_Kundalik.dfm=</Transaction>
+    <Transaction>2017.02.23 16:50:53.994.cpp,E:\Boshladik\Ishdan Kopiya da ishla\Loyiha ishi — копия\Shikoyatlar.cpp=</Transaction>
+    <Transaction>2017.02.23 16:50:53.994.dfm,E:\Boshladik\Ishdan Kopiya da ishla\Loyiha ishi — копия\Shikoyatlar.dfm=</Transaction>
+  </Transactions>
+</BorlandProject>

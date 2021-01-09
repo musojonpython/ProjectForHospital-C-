@@ -1,0 +1,33 @@
+//---------------------------------------------------------------------------
+
+#ifndef Unit10H
+#define Unit10H
+//---------------------------------------------------------------------------
+#include <Classes.hpp>
+#include <Controls.hpp>
+#include <StdCtrls.hpp>
+#include <Forms.hpp>
+#include <ExtCtrls.hpp>
+#include <Menus.hpp>
+//---------------------------------------------------------------------------
+class TPatologoanatom_xulosasi : public TForm
+{
+__published:	// IDE-managed Components
+	TMemo *Memo1;
+	TMainMenu *MainMenu1;
+	TMenuItem *Saqlash1;
+	TMenuItem *Font1;
+	TMenuItem *Chiqish1;
+	TGroupBox *GroupBox1;
+	TLabeledEdit *Kasalxonada_qoyilgan_tashhis;
+	TLabeledEdit *LabeledEdit1;
+	TLabeledEdit *LabeledEdit2;
+	TLabeledEdit *LabeledEdit3;
+private:	// User declarations
+public:		// User declarations
+	__fastcall TPatologoanatom_xulosasi(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TPatologoanatom_xulosasi *Patologoanatom_xulosasi;
+//---------------------------------------------------------------------------
+#endif

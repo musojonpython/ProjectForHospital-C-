@@ -1,0 +1,48 @@
+//---------------------------------------------------------------------------
+
+#ifndef Unit10H
+#define Unit10H
+//---------------------------------------------------------------------------
+#include <Classes.hpp>
+#include <Controls.hpp>
+#include <StdCtrls.hpp>
+#include <Forms.hpp>
+#include <Grids.hpp>
+#include <ADODB.hpp>
+#include <DB.hpp>
+#include <DBGrids.hpp>
+#include <ExtCtrls.hpp>
+#include "Unit6.h"
+#include <Buttons.hpp>
+//---------------------------------------------------------------------------
+class TLabaratoriya_ishi : public TForm
+{
+__published:	// IDE-managed Components
+	TPanel *Panel1;
+	TComboBox *ComboBox1;
+	TLabel *Label1;
+	TADOQuery *ADOQuery_Bemor_Analiz;
+	TADOQuery *ADOQuery_Bemor_murojat;
+	TPanel *Panel2;
+	TLabel *Label3;
+	TEdit *Edit1;
+	TMemo *Memo1;
+	TLabel *Label2;
+	TComboBox *ComboBox2;
+	TLabel *Label4;
+	TEdit *Edit2;
+	TLabel *Label5;
+	TADOQuery *ADOQuery_Analiz_nomlari;
+	TADOQuery *ADOQuery_Analiz_turi;
+	TSpeedButton *SpeedButton1;
+	void __fastcall ComboBox1Change(TObject *Sender);
+	void __fastcall ComboBox2Change(TObject *Sender);
+	void __fastcall SpeedButton1Click(TObject *Sender);
+private:	// User declarations
+public:		// User declarations
+	__fastcall TLabaratoriya_ishi(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TLabaratoriya_ishi *Labaratoriya_ishi;
+//---------------------------------------------------------------------------
+#endif

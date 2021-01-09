@@ -1,0 +1,47 @@
+//---------------------------------------------------------------------------
+
+#ifndef Unit4H
+#define Unit4H
+//---------------------------------------------------------------------------
+#include <Classes.hpp>
+#include <Controls.hpp>
+#include <StdCtrls.hpp>
+#include <Forms.hpp>
+#include <Menus.hpp>
+#include <Dialogs.hpp>
+#include <ComCtrls.hpp>
+#include <ExtCtrls.hpp>
+//---------------------------------------------------------------------------
+class TForm4 : public TForm
+{
+__published:	// IDE-managed Components
+	TMainMenu *MainMenu1;
+	TMenuItem *Saqlash1;
+	TMenuItem *Chiqish1;
+	TMenuItem *Font1;
+	TFontDialog *FontDialog1;
+	TPanel *Kundalik;
+	TRichEdit *RichEdit1;
+	TPanel *Xotima;
+	TRichEdit *RichEdit2;
+	TPanel *Patomorfolog;
+	TGroupBox *GroupBox1;
+	TLabeledEdit *Kasalxonada_qoyilgan_tashhis;
+	TLabeledEdit *LabeledEdit1;
+	TLabeledEdit *LabeledEdit2;
+	TLabeledEdit *LabeledEdit3;
+	TRichEdit *Memo1;
+	TPanel *Shikoyatlar;
+	TRichEdit *RichEdit3;
+	TPanel *Qabulxona_shifokori;
+	TRichEdit *RichEdit4;
+	void __fastcall Font1Click(TObject *Sender);
+	void __fastcall Chiqish1Click(TObject *Sender);
+private:	// User declarations
+public:		// User declarations
+	__fastcall TForm4(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TForm4 *Form4;
+//---------------------------------------------------------------------------
+#endif

@@ -1,0 +1,17 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include "Unit19.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+TForm_Bemorlarni_malumotini_ozgartirish *Form_Bemorlarni_malumotini_ozgartirish;
+//---------------------------------------------------------------------------
+__fastcall TForm_Bemorlarni_malumotini_ozgartirish::TForm_Bemorlarni_malumotini_ozgartirish(TComponent* Owner)
+	: TForm(Owner)
+{
+}
+//---------------------------------------------------------------------------
+

@@ -1,0 +1,255 @@
+object Form_Shifokor_Parol_Login: TForm_Shifokor_Parol_Login
+  Left = 0
+  Top = 0
+  Caption = 'Shifokor Login va Parol'
+  ClientHeight = 337
+  ClientWidth = 254
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnClose = FormClose
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 254
+    Height = 337
+    Align = alClient
+    TabOrder = 0
+    ExplicitLeft = 8
+    ExplicitWidth = 279
+    object Label1: TLabel
+      Left = 40
+      Top = 94
+      Width = 174
+      Height = 22
+      Caption = 'Parol yoki Login xato'
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clRed
+      Font.Height = -19
+      Font.Name = 'Arial'
+      Font.Style = []
+      ParentFont = False
+      Visible = False
+    end
+    object LabeledEdit1: TLabeledEdit
+      Left = 40
+      Top = 24
+      Width = 145
+      Height = 24
+      EditLabel.Width = 31
+      EditLabel.Height = 16
+      EditLabel.Caption = 'Login'
+      EditLabel.Font.Charset = RUSSIAN_CHARSET
+      EditLabel.Font.Color = clBlue
+      EditLabel.Font.Height = -13
+      EditLabel.Font.Name = 'Arial'
+      EditLabel.Font.Style = []
+      EditLabel.ParentFont = False
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clNavy
+      Font.Height = -13
+      Font.Name = 'Arial'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 0
+    end
+    object LabeledEdit2: TLabeledEdit
+      Left = 40
+      Top = 64
+      Width = 145
+      Height = 24
+      EditLabel.Width = 30
+      EditLabel.Height = 16
+      EditLabel.Caption = 'Parol'
+      EditLabel.Font.Charset = RUSSIAN_CHARSET
+      EditLabel.Font.Color = clBlue
+      EditLabel.Font.Height = -13
+      EditLabel.Font.Name = 'Arial'
+      EditLabel.Font.Style = []
+      EditLabel.ParentFont = False
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clNavy
+      Font.Height = -13
+      Font.Name = 'Arial'
+      Font.Style = []
+      ParentFont = False
+      PasswordChar = '*'
+      TabOrder = 1
+    end
+    object Button1: TButton
+      Left = 40
+      Top = 122
+      Width = 74
+      Height = 23
+      Cursor = crHandPoint
+      Hint = 'Shifokor bazasiga kirish'
+      Caption = 'Kirish'
+      Default = True
+      TabOrder = 2
+      OnClick = Button1Click
+    end
+    object Button2: TButton
+      Left = 120
+      Top = 122
+      Width = 73
+      Height = 23
+      Cursor = crHandPoint
+      Hint = 'Shifokor bazasiga kirish'
+      Caption = 'Chiqish'
+      Default = True
+      TabOrder = 3
+    end
+    object Button3: TButton
+      Left = 40
+      Top = 151
+      Width = 153
+      Height = 26
+      Cursor = crHandPoint
+      Hint = 'Shifokor bazasiga kirish'
+      Caption = 'Ro'#39'yxatdan o'#39'tish'
+      Default = True
+      TabOrder = 4
+      OnClick = Button3Click
+    end
+    object LabeledEdit3: TLabeledEdit
+      Left = 48
+      Top = 200
+      Width = 145
+      Height = 24
+      EditLabel.Width = 31
+      EditLabel.Height = 16
+      EditLabel.Caption = 'Login'
+      EditLabel.Font.Charset = RUSSIAN_CHARSET
+      EditLabel.Font.Color = clBlue
+      EditLabel.Font.Height = -13
+      EditLabel.Font.Name = 'Arial'
+      EditLabel.Font.Style = []
+      EditLabel.ParentFont = False
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clNavy
+      Font.Height = -13
+      Font.Name = 'Arial'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 5
+      Visible = False
+    end
+    object LabeledEdit4: TLabeledEdit
+      Left = 48
+      Top = 248
+      Width = 145
+      Height = 24
+      EditLabel.Width = 30
+      EditLabel.Height = 16
+      EditLabel.Caption = 'Parol'
+      EditLabel.Font.Charset = RUSSIAN_CHARSET
+      EditLabel.Font.Color = clBlue
+      EditLabel.Font.Height = -13
+      EditLabel.Font.Name = 'Arial'
+      EditLabel.Font.Style = []
+      EditLabel.ParentFont = False
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clNavy
+      Font.Height = -13
+      Font.Name = 'Arial'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 6
+      Visible = False
+    end
+    object LabeledEdit5: TLabeledEdit
+      Left = 48
+      Top = 296
+      Width = 145
+      Height = 24
+      EditLabel.Width = 118
+      EditLabel.Height = 16
+      EditLabel.Caption = 'Parolni qayta kiriitng'
+      EditLabel.Font.Charset = RUSSIAN_CHARSET
+      EditLabel.Font.Color = clBlue
+      EditLabel.Font.Height = -13
+      EditLabel.Font.Name = 'Arial'
+      EditLabel.Font.Style = []
+      EditLabel.ParentFont = False
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clNavy
+      Font.Height = -13
+      Font.Name = 'Arial'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 7
+      Visible = False
+    end
+    object DBGrid1: TDBGrid
+      Left = 280
+      Top = 64
+      Width = 153
+      Height = 104
+      TabOrder = 8
+      TitleFont.Charset = DEFAULT_CHARSET
+      TitleFont.Color = clWindowText
+      TitleFont.Height = -11
+      TitleFont.Name = 'Tahoma'
+      TitleFont.Style = []
+      Visible = False
+      Columns = <
+        item
+          Expanded = False
+          FieldName = 'i_d'
+          Width = 34
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'Login'
+          Width = 50
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'Parol'
+          Width = 50
+          Visible = True
+        end>
+    end
+  end
+  object ADOQuery1: TADOQuery
+    AutoCalcFields = False
+    Connection = ADOConnection1
+    CursorType = ctStatic
+    Parameters = <>
+    SQL.Strings = (
+      'select *'
+      'from Shifokor_Login_parol')
+    Left = 192
+    Top = 32
+  end
+  object ADOConnection1: TADOConnection
+    ConnectionString = 
+      'Provider=Microsoft.Jet.OLEDB.4.0;User ID=Admin;Data Source=E:\Bo' +
+      'shladik\Loyiha ishi\BAZA\Polikilinika.mdb;Mode=Share Deny None;P' +
+      'ersist Security Info=False;Jet OLEDB:System database="";Jet OLED' +
+      'B:Registry Path="";Jet OLEDB:Database Password="";Jet OLEDB:Engi' +
+      'ne Type=5;Jet OLEDB:Database Locking Mode=1;Jet OLEDB:Global Par' +
+      'tial Bulk Ops=2;Jet OLEDB:Global Bulk Transactions=1;Jet OLEDB:N' +
+      'ew Database Password="";Jet OLEDB:Create System Database=False;J' +
+      'et OLEDB:Encrypt Database=False;Jet OLEDB:Don'#39't Copy Locale on C' +
+      'ompact=False;Jet OLEDB:Compact Without Replica Repair=False;Jet ' +
+      'OLEDB:SFP=False'
+    LoginPrompt = False
+    Provider = 'Microsoft.Jet.OLEDB.4.0'
+    Left = 208
+    Top = 72
+  end
+  object DataSource1: TDataSource
+    DataSet = ADOQuery1
+    Left = 216
+    Top = 176
+  end
+end

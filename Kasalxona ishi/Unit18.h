@@ -1,0 +1,43 @@
+//---------------------------------------------------------------------------
+
+#ifndef Unit18H
+#define Unit18H
+//---------------------------------------------------------------------------
+#include <Classes.hpp>
+#include <Controls.hpp>
+#include <StdCtrls.hpp>
+#include <Forms.hpp>
+#include <ADODB.hpp>
+#include <DB.hpp>
+#include <ExtCtrls.hpp>
+#include <Buttons.hpp>
+#include "Unit20.h"
+//---------------------------------------------------------------------------
+class TForm_Shifoxona_boshligi_login_parol : public TForm
+{
+__published:	// IDE-managed Components
+	TPanel *Panel1;
+	TLabel *Label1;
+	TLabeledEdit *LabeledEdit1;
+	TLabeledEdit *LabeledEdit2;
+	TComboBox *ComboBox1;
+	TSpeedButton *SpeedButton1;
+	TSpeedButton *SpeedButton2;
+	TSpeedButton *SpeedButton3;
+	TADOQuery *ADOQuery1;
+	void __fastcall FormClose(TObject *Sender, TCloseAction &Action);
+	void __fastcall SpeedButton1Click(TObject *Sender);
+	void __fastcall SpeedButton2Click(TObject *Sender);
+	void __fastcall SpeedButton3Click(TObject *Sender);
+	void __fastcall SpeedButton3MouseMove(TObject *Sender, TShiftState Shift, int X,
+          int Y);
+	void __fastcall SpeedButton3MouseLeave(TObject *Sender);
+	void __fastcall FormActivate(TObject *Sender);
+private:	// User declarations
+public:		// User declarations
+	__fastcall TForm_Shifoxona_boshligi_login_parol(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TForm_Shifoxona_boshligi_login_parol *Form_Shifoxona_boshligi_login_parol;
+//---------------------------------------------------------------------------
+#endif

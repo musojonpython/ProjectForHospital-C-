@@ -1,0 +1,148 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include "Unit1.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+TForm1 *Form1;
+bool yes = false;
+//---------------------------------------------------------------------------
+__fastcall TForm1::TForm1(TComponent* Owner)
+	: TForm(Owner)
+{
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::FormActivate(TObject *Sender)
+{
+	 ADOQuery1->Close();
+	 ADOQuery1->Open();
+	 LabeledEdit1->Visible = false;
+	 Panel2->Visible = false;
+	 Edit1->Visible = false;
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::FormClose(TObject *Sender, TCloseAction &Action)
+{
+	 Form2->Show();
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::Labaratoriyaqoshish1Click(TObject *Sender)
+{
+	if (yes) {
+	String i_d;
+	Form3->Show();
+	Form1->Hide();
+	ADOQuery1->Open();
+	ADOQuery1->Edit();
+	Form3->Edit1->Text = ADOQuery1->FieldByName("Nomi")->AsString;
+	i_d = ADOQuery1->FieldByName("i_d")->AsString;
+	ADOQuery2->First();
+	Form3->ComboBox1->Clear();
+	ADOQuery1->Close();
+	while(!ADOQuery2->Eof){
+	if (ADOQuery2->FieldByName("Analiz_turi_i_d")->AsString == i_d) {
+	  Form3->ComboBox1->Items->Add(ADOQuery2->FieldByName("ÏÀÐÀÌÅÒÐÛ")->AsString);
+	}
+	ADOQuery2->Next();
+	}
+	}else{
+		ShowMessage("Oldin sanani o'rnating");
+	}
+
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::Qiriduvniochish1Click(TObject *Sender)
+{
+   LabeledEdit1->Visible = true;
+   LabeledEdit1->SetFocus();
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::Qidirishniochish1Click(TObject *Sender)
+{
+   LabeledEdit1->Visible = false;
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::LabeledEdit1Change(TObject *Sender)
+{
+   ADOQuery1->Close();
+   ADOQuery1->SQL->Clear();
+   ADOQuery1->SQL->Add("select * from Analiz_turi");
+   ADOQuery1->SQL->Add(" where Nomi LIKE '" + LabeledEdit1->Text + "%'");
+   ADOQuery1->Open();
+   if (LabeledEdit1->Text == "") {
+   ADOQuery1->Close();
+   ADOQuery1->SQL->Clear();
+   ADOQuery1->SQL->Add("select * from Analiz_turi");
+   ADOQuery1->Open();
+   }
+}
+//---------------------------------------------------------------------------
+
+
+
+
+
+void __fastcall TForm1::SpeedButton1Click(TObject *Sender)
+{
+  if (yes) {
+	String i_d = "";
+	Form3->Show();
+	Form1->Hide();
+	ADOQuery1->Open();
+	ADOQuery1->Edit();
+	Form3->Edit1->Text = ADOQuery1->FieldByName("Nomi")->AsString;
+	i_d = ADOQuery1->FieldByName("i_d")->AsString;
+	ADOQuery2->First();
+	Form3->ComboBox1->Clear();
+	ADOQuery1->Close();
+	while(!ADOQuery2->Eof){
+	if (ADOQuery2->FieldByName("Analiz_turi_i_d")->AsString == i_d) {
+	  Form3->ComboBox1->Items->Add(ADOQuery2->FieldByName("ÏÀÐÀÌÅÒÐÛ")->AsString);
+	}
+	ADOQuery2->Next();
+	}
+	}else{
+		ShowMessage("Oldin sanani o'rnating");
+	}
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::SpeedButton3Click(TObject *Sender)
+{
+	String i_d = "";
+	yes = true;
+	ADOQuery_murojat->Open();
+	ADOQuery_murojat->Insert();
+	ADOQuery_murojat->FieldByName("Murojat_sana")->AsString = MaskEdit1->Text;
+	ADOQuery_murojat->FieldByName("Bemor_i_d")->AsString = Form2->Edit1->Text;
+	ADOQuery_murojat->Post();
+	i_d = ADOQuery_murojat->FieldByName("i_d")->AsString;
+	Edit1->Text = i_d;
+	ADOQuery_murojat->Close();
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::SpeedButton2Click(TObject *Sender)
+{
+   Form1->Hide();
+	Form2->Show();
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::SpeedButton4Click(TObject *Sender)
+{
+   LabeledEdit1->Visible = true;
+   LabeledEdit1->SetFocus();
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::SpeedButton5Click(TObject *Sender)
+{
+   Panel2->Visible = true;
+
+}
+//---------------------------------------------------------------------------
+

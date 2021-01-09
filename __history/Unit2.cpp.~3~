@@ -1,0 +1,64 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include "Unit2.h"
+#include "Unit6.h"
+#include "Unit1.h"
+#include "Unit3.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+TForm_Shifokor_Parol_Login *Form_Shifokor_Parol_Login;
+//---------------------------------------------------------------------------
+__fastcall TForm_Shifokor_Parol_Login::TForm_Shifokor_Parol_Login(TComponent* Owner)
+	: TForm(Owner)
+{
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm_Shifokor_Parol_Login::Button1Click(TObject *Sender)
+{
+ //
+// Form_Shifokor_Parol_Login->Hide();
+ AnsiString log = LabeledEdit1->Text, pas = LabeledEdit2->Text;
+ AnsiString logb, pasb;
+ bool right = false;
+ ADOQuery1->First();
+	 for(int i = 0; i < ADOQuery1->RecordCount; i++)
+	 {
+		 logb = ADOQuery1->FieldByName("Login")->AsString;
+		 pasb = ADOQuery1->FieldByName("Parol")->AsString;
+		 if(log == logb && pas == pasb)
+		 {
+			 right = true; break;
+		 }
+		 ADOQuery1->Next();
+	 }
+	 if(right)
+	 {
+         ShowMessage("Login yoki parol tog'ri");
+		 //Form_Shifokor->Show();
+	 }
+	 else
+	 {
+		 ShowMessage("Login yoki parol xato");
+     }
+
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm_Shifokor_Parol_Login::FormClose(TObject *Sender, TCloseAction &Action)
+{
+Form1->Show();
+}
+//---------------------------------------------------------------------------
+
+
+void __fastcall TForm_Shifokor_Parol_Login::Button3Click(TObject *Sender)
+{
+  LabeledEdit3->Visible = true;
+  LabeledEdit4->Visible = true;
+  LabeledEdit5->Visible = true;
+}
+//---------------------------------------------------------------------------
+

@@ -1,0 +1,59 @@
+//---------------------------------------------------------------------------
+
+#ifndef Unit4H
+#define Unit4H
+//---------------------------------------------------------------------------
+#include <Classes.hpp>
+#include <Controls.hpp>
+#include <StdCtrls.hpp>
+#include <Forms.hpp>
+#include <Menus.hpp>
+#include <Dialogs.hpp>
+#include <ComCtrls.hpp>
+#include <ExtCtrls.hpp>
+//---------------------------------------------------------------------------
+class TForm4 : public TForm
+{
+__published:	// IDE-managed Components
+	TPanel *Kundalik;
+	TRichEdit *RichEdit1;
+	TPanel *Xotima;
+	TRichEdit *RichEdit2;
+	TPanel *Shikoyatlar;
+	TRichEdit *RichEdit3;
+	TPanel *Qabulxona;
+	TRichEdit *RichEdit5;
+	TPanel *Patomorfolog;
+	TGroupBox *GroupBox1;
+	TLabeledEdit *Kasalxonada_qoyilgan_tashhis;
+	TLabeledEdit *LabeledEdit1;
+	TLabeledEdit *LabeledEdit2;
+	TRichEdit *Memo1;
+	TMainMenu *MainMenu1;
+	TMenuItem *Oynalar1;
+	TMenuItem *Qabulxona_shifokorining_yozuvi;
+	TMenuItem *Kundalik2;
+	TMenuItem *Shikoyatlar1;
+	TMenuItem *Xotima1;
+	TMenuItem *Patologoanatom1;
+	TMenuItem *Chiqish1;
+	TPopupMenu *PopupMenu1;
+	TMenuItem *Oynalar2;
+	TMenuItem *Kundalik1;
+	TLabeledEdit *LabeledEdit3;
+	TGroupBox *GroupBox2;
+	void __fastcall Chiqish1Click(TObject *Sender);
+	void __fastcall FormActivate(TObject *Sender);
+	void __fastcall Qabulxona_shifokorining_yozuviClick(TObject *Sender);
+	void __fastcall Kundalik2Click(TObject *Sender);
+	void __fastcall Shikoyatlar1Click(TObject *Sender);
+	void __fastcall Xotima1Click(TObject *Sender);
+	void __fastcall Patologoanatom1Click(TObject *Sender);
+private:	// User declarations
+public:		// User declarations
+	__fastcall TForm4(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TForm4 *Form4;
+//---------------------------------------------------------------------------
+#endif

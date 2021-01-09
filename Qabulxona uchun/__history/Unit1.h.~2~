@@ -1,0 +1,41 @@
+//---------------------------------------------------------------------------
+
+#ifndef Unit1H
+#define Unit1H
+//---------------------------------------------------------------------------
+#include <Classes.hpp>
+#include <Controls.hpp>
+#include <StdCtrls.hpp>
+#include <Forms.hpp>
+#include <ADODB.hpp>
+#include <DB.hpp>
+#include <ExtCtrls.hpp>
+#include <Mask.hpp>
+//---------------------------------------------------------------------------
+class TForm1 : public TForm
+{
+__published:	// IDE-managed Components
+	TPanel *Panel1;
+	TLabeledEdit *LabeledEdit1;
+	TLabeledEdit *LabeledEdit2;
+	TLabeledEdit *LabeledEdit3;
+	TLabel *Label1;
+	TMaskEdit *MaskEdit1;
+	TLabel *Label2;
+	TComboBox *Bolim_boshliqlari;
+	TADOConnection *ADOConnection1;
+	TADOQuery *ADOQuery_Bolim_boshliqlari;
+	TDataSource *DataSource1;
+	TADOQuery *ADOQuery_Shifokorlar;
+	TComboBox *Shifokorlar;
+	TLabel *Label3;
+	void __fastcall FormActivate(TObject *Sender);
+	void __fastcall Bolim_boshliqlariChange(TObject *Sender);
+private:	// User declarations
+public:		// User declarations
+	__fastcall TForm1(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TForm1 *Form1;
+//---------------------------------------------------------------------------
+#endif

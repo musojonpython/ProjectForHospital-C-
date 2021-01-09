@@ -1,0 +1,37 @@
+//---------------------------------------------------------------------------
+
+#ifndef Unit18H
+#define Unit18H
+//---------------------------------------------------------------------------
+#include <Classes.hpp>
+#include <Controls.hpp>
+#include <StdCtrls.hpp>
+#include <Forms.hpp>
+#include <ADODB.hpp>
+#include <DB.hpp>
+#include <ExtCtrls.hpp>
+//---------------------------------------------------------------------------
+class TForm_Shifoxona_boshligi_login_parol : public TForm
+{
+__published:	// IDE-managed Components
+	TPanel *Panel1;
+	TLabel *Label1;
+	TLabeledEdit *LabeledEdit1;
+	TLabeledEdit *LabeledEdit2;
+	TButton *Button1;
+	TButton *Button2;
+	TComboBox *ComboBox1;
+	TButton *Button3;
+	TADOTable *ADOTable1;
+	void __fastcall Button1Click(TObject *Sender);
+	void __fastcall Button3Click(TObject *Sender);
+	void __fastcall FormCreate(TObject *Sender);
+	void __fastcall FormClose(TObject *Sender, TCloseAction &Action);
+private:	// User declarations
+public:		// User declarations
+	__fastcall TForm_Shifoxona_boshligi_login_parol(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TForm_Shifoxona_boshligi_login_parol *Form_Shifoxona_boshligi_login_parol;
+//---------------------------------------------------------------------------
+#endif

@@ -1,0 +1,46 @@
+//---------------------------------------------------------------------------
+
+#ifndef Unit14H
+#define Unit14H
+//---------------------------------------------------------------------------
+#include <Classes.hpp>
+#include <Controls.hpp>
+#include <StdCtrls.hpp>
+#include <Forms.hpp>
+#include <ADODB.hpp>
+#include <DB.hpp>
+#include <ExtCtrls.hpp>
+#include "Unit6.h"
+#include <Buttons.hpp>
+#include "Unit1.h"
+//---------------------------------------------------------------------------
+class TForm14_Bolim_boshligi_Login_Parol : public TForm
+{
+__published:	// IDE-managed Components
+	TLabeledEdit *LabeledEdit1;
+	TLabeledEdit *LabeledEdit2;
+	TADOQuery *ADOQuery1;
+	TButton *Button1;
+	TPanel *Panel1;
+	TLabel *Label1;
+	TSpeedButton *SpeedButton1;
+	TSpeedButton *SpeedButton2;
+	TSpeedButton *SpeedButton3;
+	TLabeledEdit *LabeledEdit3;
+	TLabeledEdit *LabeledEdit4;
+	TRadioButton *RadioButton1;
+	TRadioButton *RadioButton2;
+	void __fastcall Button1Click(TObject *Sender);
+	void __fastcall SpeedButton1Click(TObject *Sender);
+	void __fastcall FormActivate(TObject *Sender);
+	void __fastcall FormClose(TObject *Sender, TCloseAction &Action);
+	void __fastcall SpeedButton2Click(TObject *Sender);
+	void __fastcall SpeedButton3Click(TObject *Sender);
+private:	// User declarations
+public:		// User declarations
+	__fastcall TForm14_Bolim_boshligi_Login_Parol(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TForm14_Bolim_boshligi_Login_Parol *Form14_Bolim_boshligi_Login_Parol;
+//---------------------------------------------------------------------------
+#endif

@@ -1,0 +1,359 @@
+object Form4: TForm4
+  Left = 293
+  Top = 165
+  BorderStyle = bsDialog
+  Caption = 'Qabulxona shifokorining yozuvi'
+  ClientHeight = 508
+  ClientWidth = 767
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  Menu = MainMenu1
+  OldCreateOrder = False
+  Position = poDesigned
+  OnActivate = FormActivate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Kundalik: TPanel
+    Left = 0
+    Top = 0
+    Width = 767
+    Height = 508
+    Align = alClient
+    Caption = 'Kundalik'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 0
+    Visible = False
+    ExplicitHeight = 479
+    object RichEdit1: TRichEdit
+      Left = 1
+      Top = 1
+      Width = 765
+      Height = 506
+      Align = alClient
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -19
+      Font.Name = 'Arial'
+      Font.Style = []
+      Lines.Strings = (
+        '')
+      ParentFont = False
+      TabOrder = 0
+      ExplicitHeight = 477
+    end
+  end
+  object Xotima: TPanel
+    Left = 0
+    Top = 0
+    Width = 767
+    Height = 508
+    Align = alClient
+    Caption = 'Xotima'
+    TabOrder = 1
+    Visible = False
+    ExplicitHeight = 479
+    object RichEdit2: TRichEdit
+      Left = 1
+      Top = 1
+      Width = 765
+      Height = 506
+      Align = alClient
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -19
+      Font.Name = 'Arial'
+      Font.Style = []
+      Lines.Strings = (
+        '')
+      ParentFont = False
+      TabOrder = 0
+      ExplicitHeight = 477
+    end
+  end
+  object Shikoyatlar: TPanel
+    Left = 0
+    Top = 0
+    Width = 767
+    Height = 508
+    Align = alClient
+    Caption = 'Shikoyatlar'
+    TabOrder = 2
+    Visible = False
+    ExplicitHeight = 479
+    object RichEdit3: TRichEdit
+      Left = 1
+      Top = 1
+      Width = 765
+      Height = 506
+      Align = alClient
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -19
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      Lines.Strings = (
+        '')
+      ParentFont = False
+      TabOrder = 0
+      ExplicitHeight = 477
+    end
+  end
+  object Qabulxona: TPanel
+    Left = 0
+    Top = 0
+    Width = 767
+    Height = 508
+    Align = alClient
+    Caption = 'Qabulxona'
+    TabOrder = 3
+    Visible = False
+    ExplicitHeight = 479
+    object RichEdit5: TRichEdit
+      Left = 1
+      Top = 1
+      Width = 765
+      Height = 506
+      Align = alClient
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -19
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      Lines.Strings = (
+        '')
+      ParentFont = False
+      TabOrder = 0
+      ExplicitHeight = 477
+    end
+  end
+  object Patomorfolog: TPanel
+    Left = 0
+    Top = 0
+    Width = 767
+    Height = 508
+    Align = alClient
+    Caption = 'Patomorfolog'
+    TabOrder = 4
+    Visible = False
+    ExplicitHeight = 479
+    object GroupBox1: TGroupBox
+      Left = 1
+      Top = 287
+      Width = 765
+      Height = 220
+      Align = alBottom
+      Caption = 'Patomorfologik xulosa(diagnoz) '
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 0
+      ExplicitLeft = 2
+      ExplicitTop = 290
+      object Kasalxonada_qoyilgan_tashhis: TLabeledEdit
+        Left = 0
+        Top = 32
+        Width = 918
+        Height = 24
+        AutoSize = False
+        Ctl3D = True
+        EditLabel.Width = 347
+        EditLabel.Height = 16
+        EditLabel.Caption = 
+          '                                                                ' +
+          '             Asosiy'
+        EditLabel.Color = clBtnText
+        EditLabel.Font.Charset = RUSSIAN_CHARSET
+        EditLabel.Font.Color = clWindowText
+        EditLabel.Font.Height = -13
+        EditLabel.Font.Name = 'Arial'
+        EditLabel.Font.Style = []
+        EditLabel.ParentColor = False
+        EditLabel.ParentFont = False
+        Font.Charset = RUSSIAN_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -19
+        Font.Name = 'Arial'
+        Font.Style = []
+        ImeMode = imSAlpha
+        LabelSpacing = 2
+        ParentCtl3D = False
+        ParentFont = False
+        ParentShowHint = False
+        ShowHint = False
+        TabOrder = 0
+      end
+      object LabeledEdit1: TLabeledEdit
+        Left = 0
+        Top = 80
+        Width = 918
+        Height = 24
+        AutoSize = False
+        Ctl3D = True
+        EditLabel.Width = 430
+        EditLabel.Height = 16
+        EditLabel.Caption = 
+          '                                                                ' +
+          '           Asosiy kasallik asorati'
+        EditLabel.Color = clBtnText
+        EditLabel.Font.Charset = RUSSIAN_CHARSET
+        EditLabel.Font.Color = clWindowText
+        EditLabel.Font.Height = -13
+        EditLabel.Font.Name = 'Arial'
+        EditLabel.Font.Style = []
+        EditLabel.ParentColor = False
+        EditLabel.ParentFont = False
+        Font.Charset = RUSSIAN_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Arial'
+        Font.Style = []
+        ImeMode = imSAlpha
+        LabelSpacing = 2
+        ParentCtl3D = False
+        ParentFont = False
+        ParentShowHint = False
+        ShowHint = False
+        TabOrder = 1
+      end
+      object LabeledEdit2: TLabeledEdit
+        Left = -1
+        Top = 122
+        Width = 919
+        Height = 24
+        AutoSize = False
+        Ctl3D = True
+        EditLabel.Width = 418
+        EditLabel.Height = 16
+        EditLabel.Caption = 
+          '                                                                ' +
+          '             Yo'#39'ldosh kasalliklar'
+        EditLabel.Color = clBtnText
+        EditLabel.Font.Charset = RUSSIAN_CHARSET
+        EditLabel.Font.Color = clWindowText
+        EditLabel.Font.Height = -13
+        EditLabel.Font.Name = 'Arial'
+        EditLabel.Font.Style = []
+        EditLabel.ParentColor = False
+        EditLabel.ParentFont = False
+        Font.Charset = RUSSIAN_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Arial'
+        Font.Style = []
+        ImeMode = imSAlpha
+        LabelSpacing = 2
+        ParentCtl3D = False
+        ParentFont = False
+        ParentShowHint = False
+        ShowHint = False
+        TabOrder = 2
+      end
+      object LabeledEdit3: TLabeledEdit
+        Left = 0
+        Top = 172
+        Width = 353
+        Height = 24
+        AutoSize = False
+        Ctl3D = True
+        EditLabel.Width = 195
+        EditLabel.Height = 16
+        EditLabel.Caption = '                              Shifokor ismi'
+        EditLabel.Color = clBtnText
+        EditLabel.Font.Charset = RUSSIAN_CHARSET
+        EditLabel.Font.Color = clWindowText
+        EditLabel.Font.Height = -13
+        EditLabel.Font.Name = 'Arial'
+        EditLabel.Font.Style = []
+        EditLabel.ParentColor = False
+        EditLabel.ParentFont = False
+        Font.Charset = RUSSIAN_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Arial'
+        Font.Style = []
+        ImeMode = imSAlpha
+        LabelSpacing = 2
+        ParentCtl3D = False
+        ParentFont = False
+        ParentShowHint = False
+        ShowHint = False
+        TabOrder = 3
+      end
+    end
+    object Memo1: TRichEdit
+      Left = 1
+      Top = 1
+      Width = 765
+      Height = 283
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -19
+      Font.Name = 'Arial'
+      Font.Style = []
+      Lines.Strings = (
+        '')
+      ParentFont = False
+      ScrollBars = ssVertical
+      TabOrder = 1
+    end
+  end
+  object MainMenu1: TMainMenu
+    Left = 80
+    Top = 40
+    object Oynalar1: TMenuItem
+      Caption = 'Oynalar'
+      object Qabulxona_shifokorining_yozuvi: TMenuItem
+        Caption = 'Qabulxona shifokorining yozuvi'
+        ShortCut = 16465
+        OnClick = Qabulxona_shifokorining_yozuviClick
+      end
+      object Kundalik2: TMenuItem
+        Caption = 'Kundalik'
+        ShortCut = 16459
+        OnClick = Kundalik2Click
+      end
+      object Shikoyatlar1: TMenuItem
+        Caption = 'Shikoyatlar va kasallik tarixi'
+        ShortCut = 16467
+        OnClick = Shikoyatlar1Click
+      end
+      object Xotima1: TMenuItem
+        Caption = 'Xotima'
+        ShortCut = 16472
+        OnClick = Xotima1Click
+      end
+      object Patologoanatom1: TMenuItem
+        Caption = 'Patologoanatom'
+        ShortCut = 16464
+        OnClick = Patologoanatom1Click
+      end
+    end
+    object Chiqish1: TMenuItem
+      Caption = 'Chiqish'
+      OnClick = Chiqish1Click
+    end
+  end
+  object PopupMenu1: TPopupMenu
+    Left = 384
+    Top = 88
+    object Oynalar2: TMenuItem
+      Caption = 'Oynalar'
+    end
+    object Kundalik1: TMenuItem
+      Caption = 'Kundalik'
+      OnClick = Kundalik2Click
+    end
+  end
+end

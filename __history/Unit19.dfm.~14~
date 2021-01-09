@@ -1,0 +1,33 @@
+object Form_Bemorlarni_malumotini_ozgartirish: TForm_Bemorlarni_malumotini_ozgartirish
+  Left = 427
+  Top = 59
+  Width = 1382
+  Height = 784
+  AutoScroll = True
+  Caption = 'Bemorlarni malumotini o'#39'zgartirish'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesigned
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 638
+    Height = 537
+    Color = clTeal
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Arial'
+    Font.Style = []
+    ParentBackground = False
+    ParentFont = False
+    TabOrder = 0
+  end
+end

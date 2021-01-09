@@ -1,0 +1,59 @@
+//---------------------------------------------------------------------------
+
+#ifndef Unit9H
+#define Unit9H
+//---------------------------------------------------------------------------
+#include <Classes.hpp>
+#include <Controls.hpp>
+#include <StdCtrls.hpp>
+#include <Forms.hpp>
+#include <Buttons.hpp>
+#include <ExtCtrls.hpp>
+//---------------------------------------------------------------------------
+class TForm_Malumotqoshish : public TForm
+{
+__published:	// IDE-managed Components
+	TPanel *Panel1;
+	TPanel *Panel2;
+	TCheckBox *Familiya;
+	TCheckBox *Ismi;
+	TCheckBox *Otasini_ismi;
+	TCheckBox *Tug_kun_oy_yil;
+	TCheckBox *Viloyati;
+	TCheckBox *Tumani;
+	TCheckBox *Mahallasi;
+	TCheckBox *Kocha_nomi;
+	TCheckBox *Uy_raqami;
+	TCheckBox *Pasport_raqami;
+	TCheckBox *Jinsi;
+	TCheckBox *Telefon_nomeri;
+	TCheckBox *Ish_joyi;
+	TCheckBox *Ish_lavozimi;
+	TCheckBox *Bemor_tashxsi;
+	TCheckBox *Kelgan_vaqti;
+	TCheckBox *Email;
+	TCheckBox *Dori_nomlari;
+	TCheckBox *Hammasini_belgilash;
+	TCheckBox *Hammasini_ochirish;
+	TSpeedButton *SpeedButton1;
+	TSpeedButton *SpeedButton2;
+	TCheckBox *I_d;
+	void __fastcall SpeedButton2Click(TObject *Sender);
+	void __fastcall Hammasini_belgilashClick(TObject *Sender);
+	void __fastcall Hammasini_ochirishClick(TObject *Sender);
+	void __fastcall SpeedButton1Click(TObject *Sender);
+	void __fastcall SpeedButton1MouseLeave(TObject *Sender);
+	void __fastcall SpeedButton1MouseMove(TObject *Sender, TShiftState Shift, int X,
+          int Y);
+	void __fastcall SpeedButton2MouseLeave(TObject *Sender);
+	void __fastcall SpeedButton2MouseMove(TObject *Sender, TShiftState Shift, int X,
+          int Y);
+	void __fastcall FormCreate(TObject *Sender);
+private:	// User declarations
+public:		// User declarations
+	__fastcall TForm_Malumotqoshish(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TForm_Malumotqoshish *Form_Malumotqoshish;
+//---------------------------------------------------------------------------
+#endif

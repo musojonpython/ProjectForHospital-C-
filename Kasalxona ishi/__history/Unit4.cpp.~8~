@@ -1,0 +1,85 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include "Unit4.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+TForm4 *Form4;
+//---------------------------------------------------------------------------
+__fastcall TForm4::TForm4(TComponent* Owner)
+	: TForm(Owner)
+{
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm4::Chiqish1Click(TObject *Sender)
+{
+  Form4->Hide();
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm4::FormActivate(TObject *Sender)
+{
+  Xotima->Visible = false;
+  Qabulxona->Visible = false;
+  Shikoyatlar->Visible = false;
+  Kundalik->Visible = false;
+  Patomorfolog->Visible = false;
+}
+//---------------------------------------------------------------------------
+
+
+void __fastcall TForm4::Qabulxona_shifokorining_yozuviClick(TObject *Sender)
+{
+	 Qabulxona->Visible = true;
+	 Xotima->Visible = false;
+	 Shikoyatlar->Visible = false;
+	 Kundalik->Visible = false;
+	 Patomorfolog->Visible = false;
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm4::Kundalik2Click(TObject *Sender)
+{
+		 Kundalik->Visible = true;
+		 Xotima->Visible = false;
+		 Qabulxona->Visible = false;
+		 Shikoyatlar->Visible = false;
+		 Patomorfolog->Visible = false;
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm4::Shikoyatlar1Click(TObject *Sender)
+{
+		Shikoyatlar->Visible = true;
+		Xotima->Visible = false;
+		Qabulxona->Visible = false;
+		Kundalik->Visible = false;
+		Patomorfolog->Visible = false;
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm4::Xotima1Click(TObject *Sender)
+{
+		 Xotima->Visible = true;
+		 Qabulxona->Visible = false;
+		 Shikoyatlar->Visible = false;
+		 Kundalik->Visible = false;
+		 Patomorfolog->Visible = false;
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm4::Patologoanatom1Click(TObject *Sender)
+{
+		Patomorfolog->Visible = true;
+		Xotima->Visible = false;
+        Qabulxona->Visible = false;
+		Shikoyatlar->Visible = false;
+		Kundalik->Visible = false;
+}
+//---------------------------------------------------------------------------
+
+
+
+

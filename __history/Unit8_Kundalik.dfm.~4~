@@ -1,0 +1,61 @@
+object Kundalik: TKundalik
+  Left = 0
+  Top = 0
+  Caption = 'Kundalik'
+  ClientHeight = 498
+  ClientWidth = 726
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  Menu = MainMenu1
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object RichEdit1: TRichEdit
+    Left = 0
+    Top = 0
+    Width = 726
+    Height = 498
+    Align = alClient
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    Lines.Strings = (
+      '')
+    ParentFont = False
+    TabOrder = 0
+    ExplicitLeft = 88
+    ExplicitTop = 144
+    ExplicitWidth = 185
+    ExplicitHeight = 89
+  end
+  object MainMenu1: TMainMenu
+    Left = 472
+    Top = 152
+    object Saqlash1: TMenuItem
+      Caption = 'Saqlash'
+    end
+    object Font1: TMenuItem
+      Caption = 'Font'
+      OnClick = Font1Click
+    end
+    object Chiqish1: TMenuItem
+      Caption = 'Chiqish'
+      OnClick = Chiqish1Click
+    end
+  end
+  object FontDialog1: TFontDialog
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    Left = 360
+    Top = 264
+  end
+end

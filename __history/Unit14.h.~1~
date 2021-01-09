@@ -1,0 +1,48 @@
+//---------------------------------------------------------------------------
+
+#ifndef Unit14H
+#define Unit14H
+//---------------------------------------------------------------------------
+#include <Classes.hpp>
+#include <Controls.hpp>
+#include <StdCtrls.hpp>
+#include <Forms.hpp>
+#include <ExtCtrls.hpp>
+#include <Mask.hpp>
+//---------------------------------------------------------------------------
+class TForm14 : public TForm
+{
+__published:	// IDE-managed Components
+	TPanel *Panel1;
+	TLabel *Label1;
+	TLabel *Label2;
+	TLabel *Label4;
+	TLabel *Label5;
+	TLabel *Label6;
+	TLabeledEdit *Familiyasi;
+	TLabeledEdit *Ismi;
+	TLabeledEdit *Otasini_Ismi;
+	TComboBox *viloyati;
+	TLabeledEdit *Tumani;
+	TLabeledEdit *Mahalla;
+	TLabeledEdit *Kocha_nomi;
+	TLabeledEdit *Uy_nomeri;
+	TButton *Button1;
+	TLabeledEdit *Bolim_nomi;
+	TMaskEdit *Telefon_nomer;
+	TMaskEdit *Tug_kun_oy_yil;
+	TButton *Button2;
+	TComboBox *ComboBox2;
+	TMaskEdit *Pasport_raqami;
+	TLabeledEdit *Email;
+	TLabeledEdit *Ish_joyi;
+	TLabeledEdit *Login;
+	void __fastcall Button1Click(TObject *Sender);
+private:	// User declarations
+public:		// User declarations
+	__fastcall TForm14(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TForm14 *Form14;
+//---------------------------------------------------------------------------
+#endif

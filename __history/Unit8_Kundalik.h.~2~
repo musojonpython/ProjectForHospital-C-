@@ -1,0 +1,31 @@
+//---------------------------------------------------------------------------
+
+#ifndef Unit8_KundalikH
+#define Unit8_KundalikH
+//---------------------------------------------------------------------------
+#include <Classes.hpp>
+#include <Controls.hpp>
+#include <StdCtrls.hpp>
+#include <Forms.hpp>
+#include <Menus.hpp>
+#include <ComCtrls.hpp>
+#include <Dialogs.hpp>
+//---------------------------------------------------------------------------
+class TKundalik : public TForm
+{
+__published:	// IDE-managed Components
+	TMainMenu *MainMenu1;
+	TMenuItem *Saqlash1;
+	TMenuItem *Font1;
+	TMenuItem *Chiqish1;
+	TRichEdit *RichEdit1;
+	TFontDialog *FontDialog1;
+	void __fastcall Font1Click(TObject *Sender);
+private:	// User declarations
+public:		// User declarations
+	__fastcall TKundalik(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TKundalik *Kundalik;
+//---------------------------------------------------------------------------
+#endif

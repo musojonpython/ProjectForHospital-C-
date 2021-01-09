@@ -1,0 +1,30 @@
+//---------------------------------------------------------------------------
+
+#ifndef Unit2H
+#define Unit2H
+//---------------------------------------------------------------------------
+#include <Classes.hpp>
+#include <Controls.hpp>
+#include <StdCtrls.hpp>
+#include <Forms.hpp>
+#include <ExtCtrls.hpp>
+//---------------------------------------------------------------------------
+class TForm_Shifokor_Parol_Login : public TForm
+{
+__published:	// IDE-managed Components
+	TPanel *Panel1;
+	TLabeledEdit *LabeledEdit1;
+	TLabeledEdit *LabeledEdit2;
+	TButton *Button1;
+	TButton *Button2;
+	TButton *Button3;
+	void __fastcall Button1Click(TObject *Sender);
+	void __fastcall FormClose(TObject *Sender, TCloseAction &Action);
+private:	// User declarations
+public:		// User declarations
+	__fastcall TForm_Shifokor_Parol_Login(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TForm_Shifokor_Parol_Login *Form_Shifokor_Parol_Login;
+//---------------------------------------------------------------------------
+#endif
